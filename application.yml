@@ -1,3 +1,15 @@
 spring:
   profiles:
     active: dev
+---
+spring:
+  application:
+    name: hello-server-dev
+  profiles:
+    active: dev
+---
+spring:
+  application:
+    name: hello-server-test
+  profiles:
+    active: test
