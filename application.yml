@@ -4,12 +4,26 @@ spring:
 ---
 spring:
   application:
-    name: hello-server-dev
-  profiles:
-    active: dev
+    name: hello-server
+eureka:
+  instance:
+    instance-id: hello-server
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+info: 
+  desc: Spring Cloud Hello World Dev
 ---
 spring:
   application:
-    name: hello-server-test
-  profiles:
-    active: test
+    name: hello-server
+eureka:
+  instance:
+    instance-id: hello-server
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+info: 
+  desc: Spring Cloud Hello World Test
