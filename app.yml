@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles:
+    active: dev
+  application:
+    name: hello-server-dev
+---
+spring:
+  profiles:
+    active: test
+  application:
+    name: hello-server-test
