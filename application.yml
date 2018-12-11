@@ -3,6 +3,8 @@ spring:
     active: dev
 ---
 spring:
+  profiles:
+    active: dev
   application:
     name: hello-server
 eureka:
@@ -16,6 +18,8 @@ info:
   desc: Spring Cloud Hello World Dev
 ---
 spring:
+  profiles:
+    active: test
   application:
     name: hello-server
 eureka:
